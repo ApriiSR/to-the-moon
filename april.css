@@ -1,0 +1,133 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.question {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.answer {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    text-align: left;
+    position: relative;
+}
+
+.concept {
+    font-style: italic;
+    color: #ff69b4;
+}
+
+.emphasis {
+    color: #ff69b4;
+}
+
+.divider {
+    width: 50%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ff69b4, transparent);
+    margin: 3rem auto;
+    opacity: 0.5;
+}
+
+/* Sequential animations for each answer */
+.answer { animation: slideIn 2s ease-out forwards; }
+#answer1 { animation-delay: 2s; }
+#answer2 { animation-delay: 4s; }
+#answer3 { animation-delay: 6s; }
+#answer4 { animation-delay: 8s; }
+#answer5 { animation-delay: 10s; }
+#answer6 { animation-delay: 12s; }
+#answer7 { animation-delay: 14s; }
+#answer8 { animation-delay: 16s; }
+#answer9 { animation-delay: 18s; }
+#answer10 { animation-delay: 20s; }
+#answer11 { animation-delay: 22s; }
+#answer12 { animation-delay: 24s; }
+#answer13 { animation-delay: 26s; }
+#answer14 { animation-delay: 28s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced particle system */
+.particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: radial-gradient(circle, #ff69b4 0%, transparent 70%);
+    opacity: 0.3;
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0) scale(1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+        transform: translateY(50vh) translateX(50px) scale(1.5);
+    }
+    100% {
+        transform: translateY(-100px) translateX(100px) scale(1);
+        opacity: 0;
+    }
+}
+
+/* New hover effect for answers */
+.answer:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Glowing effect for important words */
+.glow {
+    text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4;
+    color: white;
+}
+a {
+    font-style:underline;
+    color:azure;
+}
