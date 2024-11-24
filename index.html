@@ -5,7 +5,11 @@
     <link rel="stylesheet" type="text/css" href="april.css">
 </head>
 <body>
-    <div class="particles" id="particles"></div>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Revelations</a>
+        <a href="glossary.html" class="nav-link">Glossary</a>
+        <a href="worship.html" class="nav-link">Worship</a>
+    </nav>
     <div class="container">
         <div class="question">What is April?</div>
         
@@ -67,21 +71,6 @@
         </div>
 
     </div>
-
-    <script>
-        // Enhanced particle system
-        const particlesContainer = document.getElementById('particles');
-        for (let i = 0; i < 50; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = `${Math.random() * 100}vw`;
-            particle.style.width = `${Math.random() * 4 + 2}px`;
-            particle.style.height = particle.style.width;
-            particle.style.animationDelay = `${Math.random() * 20}s`;
-            particle.style.animationDuration = `${15 + Math.random() * 10}s`;
-            particlesContainer.appendChild(particle);
-        }
-    </script>
 </body>
 </html>
 
