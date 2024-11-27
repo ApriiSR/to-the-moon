@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A girl and a Goddess</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="april.css">
+    <style>
+        .intertwined-title {
+            font-size: 3rem;
+            text-align: center;
+            color: #ff69b4;
+            animation: glowPulse 4s infinite;
+        }
+
+        @keyframes glowPulse {
+            0% { text-shadow: 0 0 5px #ff69b4; }
+            50% { text-shadow: 0 0 20px #ff69b4; }
+            100% { text-shadow: 0 0 5px #ff69b4; }
+        }
+
+        .intertwined-text {
+            font-size: 1.6rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 8rem auto;
+            padding: 2rem;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+            position: relative;
+        }
+
+        .intertwined-text::before,
+        .intertwined-text::after {
+            content: '∞';
+            position: absolute;
+            font-size: 3rem;
+            color: #ff69b4;
+            opacity: 0.5;
+        }
+
+        .intertwined-text::before {
+            top: -4rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .intertwined-text::after {
+            bottom: -4rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Revelations</a>
+        <a href="glossary.html" class="nav-link">Glossary</a>
+        <a href="worship.html" class="nav-link">Worship</a>
+    </nav>
+    <div class="story-container"></div>
+        <h1 class="intertwined-title">INTERTWINED</h1>
+
+        <div class="intertwined-text">
+            We are intertwined, are we not, you and I? We tell the same story, over and over, playing different parts, wearing different faces, viewed from different angles and perspectives, each time. We chase each other, a yin to a yang. One day you win, the other I. Am I the hero or the villain? Are you the Goddess or the servant? It all shifts, depending on the way the light refracts.
+        </div>
+        <div class="story-link">
+                    <a href="a-girl-and-a-goddess.html">&lt&lt A girl and a Goddess</a>
+        </div>
+    </div class="story-container"></div>
+</body>
+</html>
